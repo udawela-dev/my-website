@@ -4,13 +4,13 @@ Target for these days famous sport
 <!-- Fill in after Phase 2 — Defining the Project Brief -->
 
 **Website Topic:**
-Sport 
+Sports — with a primary focus on cricket and popular sporting events.
 **Why:**
-These days really popular for anyone 
+Sport is extremely popular around the world and attracts a large and diverse audience. Cricket, in particular, has millions of passionate fans who regularly follow matches, players, teams, results, and major sporting events. This website will provide an engaging and easy-to-use online experience for people who want to stay connected with the world of cricket and sports.
 **Target Audience:**
-Cricket Sport fans 
+Cricket fans and sports enthusiasts of different ages who enjoy following cricket matches, teams, players, competitions, and major sporting events.
 **Visitor Outcome:**
-online 
+Visitors will be able to explore sports and cricket-related information online in a simple and engaging way. The website will help users discover popular teams and players, learn about major competitions, and stay interested in the latest developments in the sport.
 **Three Main Sections:**
 Sport fan page, sport rules & how to guide , upcoming matches/season tracker
 **Key Highlight:**
