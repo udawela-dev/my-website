@@ -79,3 +79,20 @@ function filterMatches() {
 }
 
 filterMatches();
+
+// Plays a short click sound whenever the user taps any button or nav link that has audio available.
+function playClickSound() {
+  const clickSound = document.getElementById('click-sound');
+  if (!clickSound) {
+    return;
+  }
+
+  document.addEventListener('click', (event) => {
+    if (event.target.closest('button, a')) {
+      clickSound.currentTime = 0;
+      clickSound.play().catch(() => {});
+    }
+  });
+}
+
+playClickSound();
