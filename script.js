@@ -80,19 +80,83 @@ function filterMatches() {
 
 filterMatches();
 
-// Plays a short click sound whenever the user taps any button or nav link that has audio available.
-function playClickSound() {
-  const clickSound = document.getElementById('click-sound');
-  if (!clickSound) {
+// Toggles the looping background music on or off, updating the button label and aria state to match.
+function toggleBackgroundMusic() {
+  const music = document.getElementById('background-music');
+  const toggleButton = document.getElementById('music-toggle');
+  if (!music || !toggleButton) {
     return;
   }
 
-  document.addEventListener('click', (event) => {
-    if (event.target.closest('button, a')) {
-      clickSound.currentTime = 0;
-      clickSound.play().catch(() => {});
+  toggleButton.addEventListener('click', async () => {
+    try {
+      if (music.paused) {
+        await music.play();
+        toggleButton.textContent = 'Pause Music';
+        toggleButton.setAttribute('aria-pressed', 'true');
+      } else {
+        music.pause();
+        toggleButton.textContent = 'Play Music';
+        toggleButton.setAttribute('aria-pressed', 'false');
+      }
+    } catch (error) {
+      toggleButton.textContent = 'Play Music';
+      toggleButton.setAttribute('aria-pressed', 'false');
     }
   });
 }
 
-playClickSound();
+toggleBackgroundMusic();
+
+// Handles the mobile navigation sidebar, the season-details sidebar, and the shared overlay.
+function initDrawers() {
+  const navSidebar = document.getElementById('sidebar');
+  const detailSidebar = document.getElementById('detail-sidebar');
+  const overlay = document.getElementById('overlay');
+  const navToggle = document.getElementById('sidebar-toggle');
+  const navClose = document.getElementById('sidebar-close');
+  const detailOpen = document.getElementById('explore-btn');
+  const detailClose = document.getElementById('detail-close');
+
+  function setNav(open) {
+    if (!navSidebar) return;
+    navSidebar.classList.toggle('open', open);
+    if (navToggle) navToggle.setAttribute('aria-expanded', String(open));
+  }
+
+  function setDetail(open) {
+    if (!detailSidebar) return;
+    detailSidebar.classList.toggle('open', open);
+    detailSidebar.setAttribute('aria-hidden', String(!open));
+  }
+
+  function syncOverlay() {
+    if (!overlay) return;
+    const show = (navSidebar && navSidebar.classList.contains('open')) || (detailSidebar && detailSidebar.classList.contains('open'));
+    overlay.classList.toggle('show', show);
+  }
+
+  function closeAll() {
+    setNav(false);
+    setDetail(false);
+    syncOverlay();
+  }
+
+  if (navToggle) navToggle.addEventListener('click', () => { setNav(true); syncOverlay(); });
+  if (navClose) navClose.addEventListener('click', closeAll);
+  if (detailOpen) detailOpen.addEventListener('click', () => { setDetail(true); syncOverlay(); });
+  if (detailClose) detailClose.addEventListener('click', closeAll);
+  if (overlay) overlay.addEventListener('click', closeAll);
+
+  if (navSidebar) {
+    navSidebar.querySelectorAll('.nav-link').forEach((link) =>
+      link.addEventListener('click', closeAll)
+    );
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeAll();
+  });
+}
+
+initDrawers();

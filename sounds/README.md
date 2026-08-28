@@ -1,18 +1,15 @@
 # Sounds
 
-Place audio files here to add sound effects to the site.
+Audio files for the site live here.
 
-## How to add a sound
+## Background music
 
-1. Drop an audio file (`.mp3`, `.ogg`, or `.wav`) into this folder.
-2. Update `index.html` — the `<audio id="click-sound">` element currently points to `sounds/clicksound.mp3`. Change it to your actual file name, e.g.:
+The site plays background music through the `#background-music` audio element and a "Play Music / Pause Music" button.
 
-```html
-<audio id="click-sound" src="sounds/your-file.mp3" preload="auto"></audio>
-```
-
-3. The site already plays this audio when any button is clicked once the file exists.
+- **Current file:** `sounds/mfcc-sport-football-baseball-music-337978.mp3`
+- **To use a different track:** drop your `.mp3` (or `.ogg`/`.wav`) file in this folder, then update the `src` on the `<audio id="background-music">` element in `index.html`.
+- The music is set to `loop` so it repeats, and playback/pause is controlled by the button in `script.js` (`toggleBackgroundMusic()`).
 
 ## Note
 
-The referenced `clicksound.mp3` does not exist yet, so nothing plays until you add your own audio file here.
+Browsers block autoplay, so the music starts only after the visitor clicks the "Play Music" button. The button updates its label and `aria-pressed` state to stay accessible.

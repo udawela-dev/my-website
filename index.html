@@ -34,6 +34,47 @@
 
   <div id="overlay"></div>
 
+  <aside id="detail-sidebar" aria-hidden="true">
+    <div class="detail-header">
+      <h2>Season Details</h2>
+      <button id="detail-close" aria-label="Close season details">&times;</button>
+    </div>
+    <div class="detail-body">
+      <h3>England vs Pakistan — Test Series</h3>
+      <ul class="detail-list">
+        <li class="detail-item">
+          <span class="detail-status won">Won</span>
+          <span class="detail-venue">1st Test · Headingley, Leeds · 19–23 Aug</span>
+          <p>Result: England won in a dominant first outing.</p>
+        </li>
+        <li class="detail-item">
+          <span class="detail-status lost">In progress</span>
+          <span class="detail-venue">2nd Test · Lord's, London · 27–31 Aug</span>
+          <p>The series is live at the Home of Cricket.</p>
+        </li>
+        <li class="detail-item">
+          <span class="detail-status upcoming">Upcoming</span>
+          <span class="detail-venue">3rd Test · Edgbaston, Birmingham · 9–13 Sep</span>
+          <p>Decider set for the famous Edgbaston ground.</p>
+        </li>
+      </ul>
+      <h3>ICC Trophies on the Horizon</h3>
+      <ul class="detail-list">
+        <li class="detail-item">
+          <span class="detail-status upcoming">Upcoming</span>
+          <span class="detail-venue">ICC Women's T20 World Cup 2026</span>
+          <p>Global tournament kicking off later this year.</p>
+        </li>
+        <li class="detail-item">
+          <span class="detail-status upcoming">Upcoming</span>
+          <span class="detail-venue">ICC Men's T20 World Cup 2026</span>
+          <p>The men's showpiece lands this season.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="detail-footer">ICC Season Details · 2026</div>
+  </aside>
+
   <div class="page">
 
     <header>
@@ -53,7 +94,7 @@
       <section id="hero">
         <h1>Welcome to the Cricket Fan Zone</h1>
         <p class="hero-tagline">Your home for the greatest game on Earth — top players, real match schedules, and the rules you need to know.</p>
-        <a href="https://www.icc-cricket.com/fixtures-results" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Explore the Season</a>
+        <button id="explore-btn" class="btn btn-primary" type="button">Explore the Season</button>
         <img src="images/photo-1512719994953-eabf50895df7.avif" alt="A batsman playing a powerful shot under stadium lights">
       </section>
 
@@ -218,7 +259,8 @@
 
   </div>
 
-  <audio id="click-sound" src="sounds/clicksound.mp3" preload="auto"></audio>
+  <audio id="background-music" src="sounds/mfcc-sport-football-baseball-music-337978.mp3" loop preload="auto"></audio>
+  <button id="music-toggle" class="btn btn-primary" aria-pressed="false" aria-label="Play background music">Play Music</button>
 
 </body>
 </html>
