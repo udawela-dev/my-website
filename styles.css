@@ -1,14 +1,14 @@
 :root {
-  --bg: #1B2B44;
-  --text: #F4F6F8;
+  --bg: #F4F8FB;
+  --text: #0F1B2B;
   --brand: #1E88E5;
   --accent: #2ECC71;
   --accent-hover: #3DDF84;
   --brand-hover: #2F96F0;
-  --card-bg: #24344D;
+  --card-bg: #FFFFFF;
   --radius: 8px;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow: 0 4px 12px rgba(15, 27, 43, 0.12);
+  --shadow-lift: 0 8px 24px rgba(15, 27, 43, 0.18);
   --font-heading: "Bebas Neue", "Montserrat", sans-serif;
   --font-body: "Inter", "Roboto", sans-serif;
 }
@@ -66,13 +66,14 @@ a {
   justify-content: center;
   gap: 2rem;
   padding: 1rem 2rem;
-  background: rgba(27, 43, 68, 0.85);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(30, 136, 229, 0.2);
   backdrop-filter: blur(6px);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 #navbar.scrolled {
-  background: var(--bg);
+  background: #ffffff;
   box-shadow: var(--shadow);
 }
 
@@ -87,7 +88,7 @@ a {
 
 .nav-link:hover,
 .nav-link:focus-visible {
-  color: var(--accent);
+  color: var(--brand);
 }
 
 .nav-link.active {
@@ -163,6 +164,7 @@ a {
 #hero h1 {
   max-width: 16ch;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .hero-tagline {
@@ -180,7 +182,7 @@ section {
 .section-intro {
   max-width: 55ch;
   margin-bottom: 2rem;
-  color: rgba(244, 246, 248, 0.8);
+  color: rgba(15, 27, 43, 0.75);
 }
 
 /* ===== Fan Page Cards ===== */
@@ -313,7 +315,7 @@ section {
 }
 
 .acc-panel p {
-  color: rgba(244, 246, 248, 0.85);
+  color: rgba(15, 27, 43, 0.8);
 }
 
 /* ===== Matches ===== */
@@ -382,15 +384,15 @@ section {
 
 .match-card p {
   margin-top: 0.5rem;
-  color: rgba(244, 246, 248, 0.8);
+  color: rgba(15, 27, 43, 0.75);
 }
 
 /* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 2rem 1.5rem;
-  border-top: 1px solid rgba(244, 246, 248, 0.12);
-  color: rgba(244, 246, 248, 0.7);
+  border-top: 1px solid rgba(30, 136, 229, 0.2);
+  color: rgba(15, 27, 43, 0.7);
   font-size: 0.95rem;
 }
 

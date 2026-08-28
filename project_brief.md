@@ -24,8 +24,8 @@ web development service in AI
 Modern, energetic, bold - a stadium-atmosphere vibe with streamlined tech/AI polish. Confident headlines, punchy contrast, clean spacing.
 
 **Color Palette:**
-- Background: `#1B2B44` (softer navy)
-- Primary Text: `#F4F6F8` (off-white)
+- Background: `#F4F8FB` (blue-tinted white)
+- Primary Text: `#0F1B2B` (navy)
 - Brand Color: `#1E88E5` (electric blue)
 - Accent: `#2ECC71` (pitch green)
 
@@ -104,7 +104,7 @@ index.html
 
 **CSS Architecture Plan:**
 - Reset/Base: box-sizing, margin/padding zero, font smoothing, scroll-behavior smooth
-- Variables: color palette (--bg #1B2B44, --text #F4F6F8, --brand #1E88E5, --accent #2ECC71 + hover variants), fonts, spacing, border radii
+- Variables: color palette (--bg #F4F8FB, --text #0F1B2B, --brand #1E88E5, --accent #2ECC71 + hover variants), fonts, spacing, border radii
 - Typography: heading (Bebas Neue) + body (Inter) + heading/paragraph rules
 - Layout: sticky nav, hero, and card grid utilities with responsive breakpoints
 - Components: nav bar, buttons (primary + ghost), player card, accordion, match card, filter buttons
