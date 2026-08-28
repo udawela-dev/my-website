@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Player portrait - fast bowler">
+  <rect width="400" height="400" fill="#2B3B54"/>
+  <circle cx="200" cy="150" r="70" fill="#6D4C41"/>
+  <circle cx="200" cy="140" r="60" fill="#A67B5B"/>
+  <rect x="120" y="220" width="160" height="150" rx="30" fill="#2ECC71"/>
+  <line x1="200" y1="200" x2="200" y2="340" stroke="#0F1B2B" stroke-width="10" opacity="0.3"/>
+  <ellipse cx="200" cy="380" rx="120" ry="22" fill="#0F1B2B" opacity="0.35"/>
+</svg>

@@ -1,11 +1,11 @@
 :root {
-  --bg: #0F1B2B;
+  --bg: #1B2B44;
   --text: #F4F6F8;
   --brand: #1E88E5;
   --accent: #2ECC71;
   --accent-hover: #3DDF84;
   --brand-hover: #2F96F0;
-  --card-bg: #16263C;
+  --card-bg: #24344D;
   --radius: 8px;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
   --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.45);
@@ -66,7 +66,7 @@ a {
   justify-content: center;
   gap: 2rem;
   padding: 1rem 2rem;
-  background: rgba(15, 27, 43, 0.85);
+  background: rgba(27, 43, 68, 0.85);
   backdrop-filter: blur(6px);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
@@ -156,7 +156,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 27, 43, 0.55), rgba(15, 27, 43, 0.9));
+  background: linear-gradient(180deg, rgba(27, 43, 68, 0.55), rgba(27, 43, 68, 0.9));
   z-index: -1;
 }
 
@@ -296,7 +296,7 @@ section {
   transition: transform 0.3s ease;
 }
 
-.acc-item.open .acc-icon {
+.accordion-item.open .acc-icon {
   transform: rotate(225deg);
 }
 
@@ -307,7 +307,7 @@ section {
   padding: 0 1.5rem;
 }
 
-.acc-item.open .acc-panel {
+.accordion-item.open .acc-panel {
   max-height: 300px;
   padding: 0 1.5rem 1.25rem;
 }

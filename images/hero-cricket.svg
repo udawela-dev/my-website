@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Cricket stadium under bright lights">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E88E5"/>
+      <stop offset="100%" stop-color="#0F1B2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <ellipse cx="600" cy="560" rx="480" ry="90" fill="#12301600"/>
+  <rect x="0" y="470" width="1200" height="130" fill="#16263C"/>
+  <ellipse cx="600" cy="570" rx="220" ry="55" fill="#2ECC71"/>
+  <rect x="600" y="290" width="8" height="200" fill="#F4F6F8"/>
+  <rect x="600" y="380" width="120" height="8" fill="#F4F6F8"/>
+  <circle cx="600" cy="310" r="26" fill="#F4F6F8"/>
+  <circle cx="600" cy="310" r="16" fill="#E53935"/>
+  <g stroke="#F4F6F8" stroke-width="6" fill="none" opacity="0.85">
+    <line x1="150" y1="180" x2="150" y2="470"/>
+    <line x1="1050" y1="180" x2="1050" y2="470"/>
+    <line x1="150" y1="180" x2="0" y2="470" opacity="0.5"/>
+    <line x1="150" y1="180" x2="300" y2="470" opacity="0.5"/>
+    <line x1="1050" y1="180" x2="900" y2="470" opacity="0.5"/>
+    <line x1="1050" y1="180" x2="1200" y2="470" opacity="0.5"/>
+  </g>
+  <g fill="#FFF7B0" opacity="0.9">
+    <circle cx="940" cy="90" r="7"/>
+    <circle cx="1020" cy="140" r="5"/>
+    <circle cx="220" cy="110" r="6"/>
+    <circle cx="160" cy="200" r="4"/>
+  </g>
+</svg>
