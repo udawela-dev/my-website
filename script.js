@@ -3,6 +3,7 @@ function highlightActiveSection() {
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-link');
   const hero = document.getElementById('hero');
+  const SCROLL_OFFSET = 8;
 
   navbar.classList.toggle('scrolled', window.scrollY > hero.offsetHeight);
 
@@ -12,7 +13,7 @@ function highlightActiveSection() {
     if (section) {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.clientHeight;
-      if (window.scrollY >= sectionTop - 8 && window.scrollY < sectionBottom - 8) {
+      if (window.scrollY >= sectionTop - SCROLL_OFFSET && window.scrollY < sectionBottom - SCROLL_OFFSET) {
         currentSectionId = link.dataset.section;
       }
     }

@@ -369,7 +369,18 @@ section[id] {
 #hero h1 {
   max-width: 16ch;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: transparent;
+  background: linear-gradient(90deg, #ffffff, #2ECC71, #1E88E5, #ffffff);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 6s linear infinite, fadeUp 1s ease-out both;
+}
+
+@keyframes shine {
+  to {
+    background-position: 300% center;
+  }
 }
 
 .hero-tagline {
@@ -377,6 +388,18 @@ section[id] {
   max-width: 36ch;
   margin-bottom: 2rem;
   color: rgba(244, 246, 248, 0.9);
+  animation: fadeUp 1s ease-out 0.4s both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== Sections ===== */
