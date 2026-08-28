@@ -746,6 +746,16 @@ section {
   color: rgba(15, 27, 43, 0.75);
 }
 
+/* ===== Music toggle (floating control) ===== */
+#music-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 120;
+  border-radius: 999px;
+  box-shadow: var(--shadow-lift);
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;

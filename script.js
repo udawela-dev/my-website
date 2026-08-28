@@ -131,6 +131,38 @@ function startBackgroundMusic() {
 
 startBackgroundMusic();
 
+// Starts the background music on the visitor's first interaction anywhere on the page, which reliably bypasses the browser autoplay block.
+function startMusicOnFirstGesture() {
+  const music = document.getElementById('background-music');
+  const toggleButton = document.getElementById('music-toggle');
+  if (!music || !toggleButton) {
+    return;
+  }
+
+  const start = () => {
+    if (music.paused) {
+      music.play()
+        .then(() => {
+          toggleButton.textContent = 'Pause Music';
+          toggleButton.setAttribute('aria-pressed', 'true');
+        })
+        .catch(() => {
+          toggleButton.textContent = 'Play Music';
+          toggleButton.setAttribute('aria-pressed', 'false');
+        });
+    }
+    document.removeEventListener('pointerdown', start);
+    document.removeEventListener('keydown', start);
+    document.removeEventListener('touchstart', start);
+  };
+
+  ['pointerdown', 'keydown', 'touchstart'].forEach((eventName) =>
+    document.addEventListener(eventName, start)
+  );
+}
+
+startMusicOnFirstGesture();
+
 // Handles the mobile navigation sidebar, the season-details sidebar, and the shared overlay.
 function initDrawers() {
   const navSidebar = document.getElementById('sidebar');
