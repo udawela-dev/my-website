@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Fan Zone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav id="navbar">
+      <a class="nav-link" data-section="hero" href="#hero">Home</a>
+      <a class="nav-link" data-section="fan" href="#fan">Fan Page</a>
+      <a class="nav-link" data-section="rules" href="#rules">Rules</a>
+      <a class="nav-link" data-section="matches" href="#matches">Matches</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <h1>Welcome to the Cricket Fan Zone</h1>
+      <p class="hero-tagline">Your home for the greatest game on Earth — news, rules, and the season ahead.</p>
+      <a href="#fan" class="btn btn-primary">Explore the Season</a>
+      <img src="images/hero-cricket.jpg" alt="A batsman playing a powerful shot under stadium lights">
+    </section>
+
+    <section id="fan">
+      <h2>Fan Favourites</h2>
+      <p class="section-intro">Meet a few of the stars that make cricket unforgettable.</p>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/player-1.jpg" alt="Portrait of an opening batsman in his team kit">
+              <h3>Player One</h3>
+            </div>
+            <div class="card-back">
+              <h3>Player One</h3>
+              <p>Top-order batsman known for fearless hitting and a strike rate to match.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/player-2.jpg" alt="Portrait of a fast bowler mid-delivery">
+              <h3>Player Two</h3>
+            </div>
+            <div class="card-back">
+              <h3>Player Two</h3>
+              <p>Express-paced bowler who thrives in the death overs with pinpoint yorkers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/player-3.jpg" alt="Portrait of a wicketkeeper taking a catch">
+              <h3>Player Three</h3>
+            </div>
+            <div class="card-back">
+              <h3>Player Three</h3>
+              <p>Agile wicketkeeper with lightning glove work and a calm head under pressure.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2>Cricket Rules & How-To</h2>
+      <p class="section-intro">Get up to speed with the basics of the game.</p>
+      <div class="accordion-item">
+        <button class="acc-btn">
+          How many overs are there in a T20 match?
+          <span class="acc-icon"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Each team bats for a maximum of 20 overs, with each over containing six legal deliveries.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="acc-btn">
+          What is the role of each player on the field?
+          <span class="acc-icon"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Eleven players per side cover batting, bowling, wicketkeeping, and fielding roles between them.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="acc-btn">
+          How is a run scored?
+          <span class="acc-icon"></span>
+        </button>
+        <div class="acc-panel">
+          <p>Runs come from pushing the ball and running between the wickets, or from boundaries hit to the edge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="matches">
+      <h2>Season Tracker</h2>
+      <p class="section-intro">Filter the schedule to see what's coming up and how the team is doing.</p>
+      <div class="filter-bar">
+        <button class="filter-btn" data-status="all">All</button>
+        <button class="filter-btn" data-status="won">Won</button>
+        <button class="filter-btn" data-status="lost">Lost</button>
+        <button class="filter-btn" data-status="upcoming">Upcoming</button>
+      </div>
+      <div class="match-grid">
+
+        <div class="match-card" data-status="won">
+          <h3>Match 1 — vs Opponents A</h3>
+          <p>Result: Won by 5 wickets</p>
+        </div>
+
+        <div class="match-card" data-status="upcoming">
+          <h3>Match 2 — vs Opponents B</h3>
+          <p>Upcoming — date TBC</p>
+        </div>
+
+        <div class="match-card" data-status="lost">
+          <h3>Match 3 — vs Opponents C</h3>
+          <p>Result: Lost by 12 runs</p>
+        </div>
+
+        <div class="match-card" data-status="upcoming">
+          <h3>Match 4 — vs Opponents D</h3>
+          <p>Upcoming — date TBC</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© Cricket Fan Zone — built with AI.</p>
+  </footer>
+
+</body>
+</html>
