@@ -108,6 +108,29 @@ function toggleBackgroundMusic() {
 
 toggleBackgroundMusic();
 
+// Tries to start the background music automatically on load, keeping the Play/Pause button as fallback when the browser blocks autoplay.
+function startBackgroundMusic() {
+  const music = document.getElementById('background-music');
+  const toggleButton = document.getElementById('music-toggle');
+  if (!music || !toggleButton) {
+    return;
+  }
+
+  music.volume = 0.6;
+
+  music.play()
+    .then(() => {
+      toggleButton.textContent = 'Pause Music';
+      toggleButton.setAttribute('aria-pressed', 'true');
+    })
+    .catch(() => {
+      toggleButton.textContent = 'Play Music';
+      toggleButton.setAttribute('aria-pressed', 'false');
+    });
+}
+
+startBackgroundMusic();
+
 // Handles the mobile navigation sidebar, the season-details sidebar, and the shared overlay.
 function initDrawers() {
   const navSidebar = document.getElementById('sidebar');
