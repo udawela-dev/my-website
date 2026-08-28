@@ -9,182 +9,214 @@
 </head>
 <body>
 
-  <header>
-    <nav id="navbar">
+  <button id="sidebar-toggle" aria-label="Open navigation menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">CF<span>Z</span></div>
+      <button id="sidebar-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="sidebar-nav">
       <a class="nav-link" data-section="hero" href="#hero">Home</a>
       <a class="nav-link" data-section="fan" href="#fan">Fan Page</a>
       <a class="nav-link" data-section="rules" href="#rules">Rules</a>
       <a class="nav-link" data-section="matches" href="#matches">Matches</a>
     </nav>
-  </header>
+    <div class="sidebar-footer">
+      <p>ICC Season Details</p>
+      <span class="sidebar-badge">2026</span>
+    </div>
+  </aside>
 
-  <main>
+  <div id="overlay"></div>
 
-    <section id="hero">
-      <h1>Welcome to the Cricket Fan Zone</h1>
-      <p class="hero-tagline">Your home for the greatest game on Earth — top players, real match schedules, and the rules you need to know.</p>
-      <a href="https://www.icc-cricket.com/fixtures-results" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Explore the Season</a>
-      <img src="images/photo-1512719994953-eabf50895df7.avif" alt="A batsman playing a powerful shot under stadium lights">
-    </section>
+  <div class="page">
 
-    <section id="fan">
-      <h2>Fan Favourites</h2>
-      <p class="section-intro">Meet a few of the stars that make cricket unforgettable.</p>
-      <div class="card-grid">
+    <header>
+      <nav id="navbar">
+        <a class="brand" href="#hero">CRICKET<span>FAN ZONE</span></a>
+        <div class="navbar-links">
+          <a class="nav-link" data-section="hero" href="#hero">Home</a>
+          <a class="nav-link" data-section="fan" href="#fan">Fan Page</a>
+          <a class="nav-link" data-section="rules" href="#rules">Rules</a>
+          <a class="nav-link" data-section="matches" href="#matches">Matches</a>
+        </div>
+      </nav>
+    </header>
 
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="images/images-6.jpeg" alt="Portrait of Shubman Gill in his India team kit">
-              <h3>Shubman Gill</h3>
+    <main>
+
+      <section id="hero">
+        <h1>Welcome to the Cricket Fan Zone</h1>
+        <p class="hero-tagline">Your home for the greatest game on Earth — top players, real match schedules, and the rules you need to know.</p>
+        <a href="https://www.icc-cricket.com/fixtures-results" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Explore the Season</a>
+        <img src="images/photo-1512719994953-eabf50895df7.avif" alt="A batsman playing a powerful shot under stadium lights">
+      </section>
+
+      <section id="fan">
+        <h2>Fan Favourites</h2>
+        <p class="section-intro">Meet a few of the stars that make cricket unforgettable.</p>
+        <div class="card-grid">
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/images-6.jpeg" alt="Portrait of Shubman Gill in his India team kit">
+                <h3>Shubman Gill</h3>
+              </div>
+              <div class="card-back">
+                <h3>Shubman Gill</h3>
+                <p>India's No.1 ranked ODI batter (801 rating). Over 3,000 ODI runs at an average above 57.</p>
+              </div>
             </div>
-            <div class="card-back">
-              <h3>Shubman Gill</h3>
-              <p>India's No.1 ranked ODI batter (801 rating). Over 3,000 ODI runs at an average above 57.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/images-7.jpeg" alt="Portrait of Virat Kohli in his India team kit">
+                <h3>Virat Kohli</h3>
+              </div>
+              <div class="card-back">
+                <h3>Virat Kohli</h3>
+                <p>One of the greatest batters in history — nearly 15,000 ODI runs with 50+ centuries.</p>
+              </div>
             </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/images-8.jpeg" alt="Portrait of Daryl Mitchell in his New Zealand team kit">
+                <h3>Daryl Mitchell</h3>
+              </div>
+              <div class="card-back">
+                <h3>Daryl Mitchell</h3>
+                <p>New Zealand's top-ranked batter (794 rating), a fearsome middle-order striker.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/images-9.jpeg" alt="Portrait of Joe Root in his England team kit">
+                <h3>Joe Root</h3>
+              </div>
+              <div class="card-back">
+                <h3>Joe Root</h3>
+                <p>England Test captain and one of the all-time greats, back in the ODI top 10.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="rules">
+        <h2>Cricket Rules & How-To</h2>
+        <p class="section-intro">Get up to speed with the basics of the game.</p>
+        <div class="accordion-item">
+          <button class="acc-btn">
+            How many formats of cricket are there?
+            <span class="acc-icon"></span>
+          </button>
+          <div class="acc-panel">
+            <p>Three main international formats: Test (5 days), One-Day International / ODI (50 overs per side), and Twenty20 / T20 (20 overs per side). Formats differ in length and pace of play.</p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="images/images-7.jpeg" alt="Portrait of Virat Kohli in his India team kit">
-              <h3>Virat Kohli</h3>
-            </div>
-            <div class="card-back">
-              <h3>Virat Kohli</h3>
-              <p>One of the greatest batters in history — nearly 15,000 ODI runs with 50+ centuries.</p>
-            </div>
+        <div class="accordion-item">
+          <button class="acc-btn">
+            What does an over consist of?
+            <span class="acc-icon"></span>
+          </button>
+          <div class="acc-panel">
+            <p>An over is a set of six legal deliveries bowled in sequence. After an over, a different bowler bowls the next over from the other end of the pitch.</p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="images/images-8.jpeg" alt="Portrait of Daryl Mitchell in his New Zealand team kit">
-              <h3>Daryl Mitchell</h3>
-            </div>
-            <div class="card-back">
-              <h3>Daryl Mitchell</h3>
-              <p>New Zealand's top-ranked batter (794 rating), a fearsome middle-order striker.</p>
-            </div>
+        <div class="accordion-item">
+          <button class="acc-btn">
+            What are the roles of each player on the field?
+            <span class="acc-icon"></span>
+          </button>
+          <div class="acc-panel">
+            <p>Eleven players per side take on batting, bowling, wicketkeeping, and fielding roles. The batting side tries to score runs, while the fielding side bowls and fields to dismiss batters and restrict scoring.</p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="images/images-9.jpeg" alt="Portrait of Joe Root in his England team kit">
-              <h3>Joe Root</h3>
-            </div>
-            <div class="card-back">
-              <h3>Joe Root</h3>
-              <p>England Test captain and one of the all-time greats, back in the ODI top 10.</p>
-            </div>
+        <div class="accordion-item">
+          <button class="acc-btn">
+            How is a run scored?
+            <span class="acc-icon"></span>
+          </button>
+          <div class="acc-panel">
+            <p>Runs come from running between the wickets, or from hitting the ball to the boundary — a four scores 4 runs and a six scores 6 runs. Extras (no-balls, wides, byes) also add to the total.</p>
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <section id="rules">
-      <h2>Cricket Rules & How-To</h2>
-      <p class="section-intro">Get up to speed with the basics of the game.</p>
-      <div class="accordion-item">
-        <button class="acc-btn">
-          How many formats of cricket are there?
-          <span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel">
-          <p>Three main international formats: Test (5 days), One-Day International / ODI (50 overs per side), and Twenty20 / T20 (20 overs per side). Formats differ in length and pace of play.</p>
+        <div class="accordion-item">
+          <button class="acc-btn">
+            What is a wicket?
+            <span class="acc-icon"></span>
+          </button>
+          <div class="acc-panel">
+            <p>A batter is dismissed in ways such as being bowled (ball hits the stumps), caught, lbw (leg before wicket), or run out. When a team is all out or its overs run out, the innings ends.</p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="accordion-item">
-        <button class="acc-btn">
-          What does an over consist of?
-          <span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel">
-          <p>An over is a set of six legal deliveries bowled in sequence. After an over, a different bowler bowls the next over from the other end of the pitch.</p>
+      <section id="matches">
+        <h2>Season Tracker</h2>
+        <p class="section-intro">Filter the schedule to see what's coming up and how the team is doing.</p>
+        <div class="filter-bar">
+          <button class="filter-btn" data-status="all">All</button>
+          <button class="filter-btn" data-status="won">Won</button>
+          <button class="filter-btn" data-status="lost">Lost</button>
+          <button class="filter-btn" data-status="upcoming">Upcoming</button>
         </div>
-      </div>
+        <div class="match-grid">
 
-      <div class="accordion-item">
-        <button class="acc-btn">
-          What are the roles of each player on the field?
-          <span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel">
-          <p>Eleven players per side take on batting, bowling, wicketkeeping, and fielding roles. The batting side tries to score runs, while the fielding side bowls and fields to dismiss batters and restrict scoring.</p>
+          <div class="match-card" data-status="won">
+            <h3>1st Test — England vs Pakistan</h3>
+            <p>Headingley, Leeds · 19–23 Aug · Result: England won</p>
+          </div>
+
+          <div class="match-card" data-status="lost">
+            <h3>2nd Test — England vs Pakistan</h3>
+            <p>Lord's, London · 27–31 Aug · In progress at Lord's</p>
+          </div>
+
+          <div class="match-card" data-status="upcoming">
+            <h3>3rd Test — England vs Pakistan</h3>
+            <p>Edgbaston, Birmingham · 9–13 Sep · Upcoming</p>
+          </div>
+
+          <div class="match-card" data-status="upcoming">
+            <h3>ICC Women's T20 World Cup 2026</h3>
+            <p>Global tournament · Later this year · Upcoming</p>
+          </div>
+
+          <div class="match-card" data-status="upcoming">
+            <h3>ICC Men's T20 World Cup 2026</h3>
+            <p>Global tournament · This season · Upcoming</p>
+          </div>
+
         </div>
-      </div>
+      </section>
 
-      <div class="accordion-item">
-        <button class="acc-btn">
-          How is a run scored?
-          <span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel">
-          <p>Runs come from running between the wickets, or from hitting the ball to the boundary — a four scores 4 runs and a six scores 6 runs. Extras (no-balls, wides, byes) also add to the total.</p>
-        </div>
-      </div>
+    </main>
 
-      <div class="accordion-item">
-        <button class="acc-btn">
-          What is a wicket?
-          <span class="acc-icon"></span>
-        </button>
-        <div class="acc-panel">
-          <p>A batter is dismissed in ways such as being bowled (ball hits the stumps), caught, lbw (leg before wicket), or run out. When a team is all out or its overs run out, the innings ends.</p>
-        </div>
-      </div>
-    </section>
+    <footer>
+      <p>© Cricket Fan Zone — built with AI. Season details from the ICC match schedule.</p>
+    </footer>
 
-    <section id="matches">
-      <h2>Season Tracker</h2>
-      <p class="section-intro">Filter the schedule to see what's coming up and how the team is doing.</p>
-      <div class="filter-bar">
-        <button class="filter-btn" data-status="all">All</button>
-        <button class="filter-btn" data-status="won">Won</button>
-        <button class="filter-btn" data-status="lost">Lost</button>
-        <button class="filter-btn" data-status="upcoming">Upcoming</button>
-      </div>
-      <div class="match-grid">
-
-        <div class="match-card" data-status="won">
-          <h3>1st Test — England vs Pakistan</h3>
-          <p>Headingley, Leeds · 19–23 Aug · Result: England won</p>
-        </div>
-
-        <div class="match-card" data-status="lost">
-          <h3>2nd Test — England vs Pakistan</h3>
-          <p>Lord's, London · 27–31 Aug · In progress at Lord's</p>
-        </div>
-
-        <div class="match-card" data-status="upcoming">
-          <h3>3rd Test — England vs Pakistan</h3>
-          <p>Edgbaston, Birmingham · 9–13 Sep · Upcoming</p>
-        </div>
-
-        <div class="match-card" data-status="upcoming">
-          <h3>ICC Women's T20 World Cup 2026</h3>
-          <p>Global tournament · Later this year · Upcoming</p>
-        </div>
-
-        <div class="match-card" data-status="upcoming">
-          <h3>ICC Men's T20 World Cup 2026</h3>
-          <p>Global tournament · This season · Upcoming</p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© Cricket Fan Zone — built with AI. Data &amp; updates inspired by icc-cricket.com.</p>
-  </footer>
+  </div>
 
 </body>
 </html>

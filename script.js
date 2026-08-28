@@ -70,8 +70,8 @@ function filterMatches() {
 
       matchCards.forEach((card) => {
         const cardStatus = card.dataset.status;
-        const matches = selectedStatus === 'all' || cardStatus === selectedStatus;
-        card.classList.toggle('hidden', !matches);
+        const shouldShow = selectedStatus === 'all' || cardStatus === selectedStatus;
+        card.classList.toggle('hidden', !shouldShow);
       });
     });
   });
